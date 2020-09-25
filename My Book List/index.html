@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/4b02c1a012.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <title>My Book List</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="navBar" class="align-item-center">
+        <h1 id="myBookList" class="align-center">
+          <i class="fas fa-book-open text-primary"></i>My
+          <span class="text-primary">Book</span>List
+        </h1>
+      </nav>
+      <form id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input id="titleValue" type="text" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input id="authorValue" type="text" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="bookCodeNo">Book Code No</label>
+          <input id="codeValue" type="text" class="form-control" required />
+        </div>
+        <input
+          type="submit"
+          value="Add Book"
+          class="btn btn-primary form-control"
+          id="addBook"
+        />
+      </form>
+      <h3 class="mt-2 text-danger">Books To Read</h3>
+      <table class="table table-hover mt-3">
+        <thead>
+          <tr>
+            <th></th>
+            <th id="title">Title</th>
+            <th id="author">Author</th>
+            <th id="bookCodeNo">Book Code No</th>
+          </tr>
+        </thead>
+        <tbody id="bookList"></tbody>
+      </table>
+      <div id="comp"></div>
+      <table class="table table-hover mt-3">
+        <tbody id="shifted"></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
